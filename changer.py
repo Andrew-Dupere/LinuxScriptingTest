@@ -7,7 +7,7 @@ from datetime import datetime
 
 
 html_file_path = r"/var/www/html/index2.html"
-line_number = 19
+line_number = 20
 new_content = 'last update' + str(datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
 
 
