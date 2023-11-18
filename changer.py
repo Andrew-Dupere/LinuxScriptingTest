@@ -16,7 +16,7 @@ def replace_line_in_html(html_file_path, line_number, new_content):
         lines = file.readlines()
 
     if 0 < line_number <= len(lines):
-        lines[line_number - 1] = new_content
+        lines[line_number - 1] = new_content + '\n'
 
         with open(html_file_path, 'w') as file:
             file.writelines(lines)
